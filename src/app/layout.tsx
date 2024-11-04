@@ -10,6 +10,8 @@ import {
 } from "@/app/config";
 import { SchemaOrg } from "@/components/features/SchemaOrg";
 import { WebSite, WithContext } from "schema-dts";
+import { Header } from "@/components/sections/Header";
+import { Footer } from "@/components/sections/Footer";
 
 const inter = localFont({
   src: "./fonts/InterVariable.woff2",
@@ -22,7 +24,6 @@ export const metadata: Metadata = {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
   },
-  description: APP_DESCRIPTION,
   appleWebApp: {
     title: APP_NAME,
     statusBarStyle: "default",
@@ -48,8 +49,10 @@ export default function RootLayout({
   return (
     <html lang={APP_LANG}>
       <body
-        className={`${inter.variable} variable-font-reset font-sans antialiased`}>
+        className={`${inter.variable} variable-font-reset container mx-auto px-4 font-sans text-neutral-950 antialiased`}>
+        <Header />
         {children}
+        <Footer />
         <SchemaOrg schema={websiteSchema} />
       </body>
     </html>
