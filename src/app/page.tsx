@@ -1,6 +1,6 @@
 import { SchemaOrg } from "@/components/features/SchemaOrg";
 import { BreadcrumbList, WithContext } from "schema-dts";
-import { BASE_URL } from "./config";
+import { BASE_URL } from "@/app/config";
 
 const breadcrumbListSchema: WithContext<BreadcrumbList> = {
   "@context": "https://schema.org",

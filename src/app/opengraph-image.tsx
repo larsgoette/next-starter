@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { APP_NAME, APP_TITLE, OG_BACKGROUND_COLOR } from "./config";
+import { APP_NAME, APP_TITLE, OG_BACKGROUND_COLOR } from "@/app/config";
 
 export const runtime = "edge";
 
