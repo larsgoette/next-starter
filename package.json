@@ -1,13 +1,5 @@
 {
-  "name": "next-lean-starter",
-  "version": "0.1.0",
-  "description": "A lean Next.js starter with Tailwind CSS, TypeScript, and Prettier.",
-  "author": {
-    "name": "Lars Götte",
-    "url": "https://larsgoette.de"
-  },
-  "license": "MIT",
-  "private": false,
+  "private": true,
   "browserslist": [
     ">0.5%",
     "last 2 versions",
@@ -23,30 +15,30 @@
     "favions": "tsx src/scripts/generate-favicons.ts"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "schema-dts": "^1.1.2",
-    "sharp": "^0.33.5",
-    "tailwind-merge": "^2.5.4"
+    "clsx": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "schema-dts": "latest",
+    "sharp": "latest",
+    "tailwind-merge": "latest"
   },
   "devDependencies": {
-    "@csstools/postcss-oklab-function": "^4.0.5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.2",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "favicons": "^7.2.0",
-    "postcss": "^8",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwindcss": "^3.4.1",
-    "tsx": "^4.19.2",
-    "typescript": "^5"
+    "@csstools/postcss-oklab-function": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "favicons": "latest",
+    "postcss": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
   }
 }
