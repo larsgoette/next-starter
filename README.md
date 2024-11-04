@@ -2,6 +2,12 @@
 
 A lean and modern [Next.js](https://nextjs.org) starter template with a focus on developer experience and best practices. Built with TypeScript, Tailwind CSS, and includes essential tooling for code quality and optimization.
 
+## 💡 Philosophy
+
+This starter was created with one key principle in mind: **You should spend your time building, not configuring**.
+
+Unlike many starter templates that come loaded with features you may never use, this template provides just what you need to start building right away. No time wasted removing unused dependencies or reconfiguring bloated setups. Every included feature and configuration serves a purpose, creating a foundation that's ready for immediate development while maintaining complete flexibility for your project's specific needs.
+
 ## 🚀 Quick Start
 
 ```bash
