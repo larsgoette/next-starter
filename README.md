@@ -6,7 +6,7 @@ A lean and modern [Next.js](https://nextjs.org) starter template with a focus on
 
 ```bash
 # Create new project using this starter
-npx create-next-app@latest --example "https://github.com/larsgoette/next-lean-starter" your-project-name
+npx create-next-app@latest --example "https://github.com/larsgoette/next-lean-starter" [your-project-name]
 
 # Navigate to the project
 cd your-project-name
@@ -151,7 +151,7 @@ Browserlist support is configured for:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## 👤 Author
 
