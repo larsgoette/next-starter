@@ -1,6 +1,6 @@
 # Next Lean Starter
 
-A lean and modern [Next.js](https://nextjs.org) starter template with a focus on developer experience and best practices. Built with TypeScript, Tailwind CSS, and includes essential tooling for code quality and optimization.
+A lean, modern and opinionated [Next.js](https://nextjs.org) starter template with a focus on developer experience and best practices. Built with TypeScript, Tailwind CSS, and includes essential tooling for code quality and optimization.
 
 ## 💡 Philosophy
 
@@ -81,7 +81,6 @@ The `src/app` directory contains the core Next.js application files:
 
 ```
 app/
-├── fonts/                 # Font configurations
 ├── apple-icon.png         # [Auto-generated] iOS icon
 ├── config.tsx             # Global configuration
 ├── favicon.ico            # [Auto-generated] Browser favicon
