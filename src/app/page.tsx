@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     absolute: `${APP_TITLE} | ${APP_NAME}`,
   },
   description: APP_DESCRIPTION,
+  openGraph: {
+    title: `${APP_TITLE} | ${APP_NAME}`,
+    description: APP_DESCRIPTION,
+  },
 };
 
 const breadcrumbListSchema: WithContext<BreadcrumbList> = {
@@ -30,7 +34,7 @@ export default function Home() {
         <section className="min-h-dvh py-20">
           <hgroup className="flex flex-col gap-2">
             <h1 className="text-5xl font-bold">{APP_TITLE}</h1>
-            <p className="font text-5xl font-bold text-neutral-400">
+            <p className="font text-5xl font-bold text-zinc-400">
               {APP_DESCRIPTION}
             </p>
           </hgroup>

@@ -4,6 +4,7 @@ import "./globals.css";
 import {
   APP_DESCRIPTION,
   APP_LANG,
+  APP_LOCALE,
   APP_NAME,
   BASE_URL,
   THEME_COLOR,
@@ -20,9 +21,18 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
     template: `%s | ${APP_NAME}`,
     default: APP_NAME,
+  },
+  openGraph: {
+    title: APP_NAME,
+    description: APP_DESCRIPTION,
+    url: BASE_URL,
+    siteName: APP_NAME,
+    locale: APP_LOCALE,
+    type: "website",
   },
   appleWebApp: {
     title: APP_NAME,
@@ -49,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang={APP_LANG}>
       <body
-        className={`${inter.variable} variable-font-reset container mx-auto px-4 font-sans text-neutral-950 antialiased`}>
+        className={`${inter.variable} variable-font-reset container mx-auto bg-white px-4 font-sans text-zinc-950 antialiased`}>
         <Header />
         {children}
         <Footer />

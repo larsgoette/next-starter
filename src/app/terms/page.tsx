@@ -5,6 +5,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
+  openGraph: {
+    title: "Terms of Use",
+  },
   robots: {
     index: false,
     follow: true,

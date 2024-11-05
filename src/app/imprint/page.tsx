@@ -5,6 +5,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Imprint",
+  openGraph: {
+    title: "Imprint",
+  },
   robots: {
     index: false,
     follow: true,
