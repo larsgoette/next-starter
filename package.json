@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "favions": "tsx src/scripts/generate-favicons.ts"
+    "favicons": "tsx src/scripts/generate-favicons.ts"
   },
   "dependencies": {
     "clsx": "latest",
