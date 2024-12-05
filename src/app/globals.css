@@ -1,29 +1,95 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-  .variable-font-reset {
-    font-variation-settings:
-      "slnt" 0,
-      "opsz" 24;
-    font-optical-sizing: auto;
-    font-feature-settings:
-      "liga" 1,
-      "calt" 1,
-      /* Chrome fix */ "zero" 1,
-      "cv01" 1 /* alternate zero and one */;
-    font-synthesis: none;
-    font-synthesis-style: none;
-    font-synthesis-weight: none;
-    font-synthesis-small-caps: none;
-    text-rendering: optimizeLegibility;
-  }
+@theme {
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-xs--letter-spacing: 0%;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25rem;
+  --text-sm--letter-spacing: -0.6%;
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-base--letter-spacing: -1.1%;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.75rem;
+  --text-lg--letter-spacing: -1.4%;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.75rem;
+  --text-xl--letter-spacing: -1.7%;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 2rem;
+  --text-2xl--letter-spacing: -1.9%;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-3xl--letter-spacing: -2.1%;
+  --text-4xl: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-4xl--letter-spacing: -2.2%;
+  --text-5xl: 3rem;
+  --text-5xl--line-height: 1;
+  --text-5xl--letter-spacing: -2.2%;
+  --text-6xl: 3.75rem;
+  --text-6xl--line-height: 1;
+  --text-6xl--letter-spacing: -2.2%;
+  --text-7xl: 4.5rem;
+  --text-7xl--line-height: 1;
+  --text-7xl--letter-spacing: -2.2%;
+  --text-8xl: 6rem;
+  --text-8xl--line-height: 1;
+  --text-8xl--letter-spacing: -2.2%;
+  --text-9xl: 8rem;
+  --text-9xl--line-height: 1;
+  --text-9xl--letter-spacing: -2.2%;
 
-  .variable-tabular-nums {
-    font-feature-settings:
-      "tnum" 1,
-      "zero" 1,
-      "cv01" 1;
+  --font-sans: var(--font-inter), -apple-system, system-ui, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+
+  --shadow-soft: 0 8px 32px 4px rgba(0, 0, 0, 0.04);
+
+  --color-primary: oklch(69.88% 0.2421 41.13);
+  --color-secondary: oklch(85.59% 0.2937 154.59);
+  --color-tertiary: oklch(65.49% 0.1937998046114747 239.2963644488785);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@utility variable-font-reset {
+  font-variation-settings:
+    'slnt' 0,
+    'opsz' 24;
+  font-optical-sizing: auto;
+  font-feature-settings:
+    'liga' 1,
+    'calt' 1,
+    /* Chrome fix */ 'zero' 1,
+    'cv01' 1 /* alternate zero and one */;
+  font-synthesis: none;
+  font-synthesis-style: none;
+  font-synthesis-weight: none;
+  font-synthesis-small-caps: none;
+  text-rendering: optimizeLegibility;
+}
+
+@utility variable-tabular-nums {
+  font-feature-settings:
+    'tnum' 1,
+    'zero' 1,
+    'cv01' 1;
 }

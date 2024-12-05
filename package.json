@@ -24,11 +24,10 @@
     "tailwind-merge": "latest"
   },
   "devDependencies": {
-    "@csstools/postcss-oklab-function": "latest",
+    "@tailwindcss/postcss": "^4.0.0-beta.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "eslint-config-prettier": "latest",
@@ -36,8 +35,8 @@
     "favicons": "latest",
     "postcss": "latest",
     "prettier": "latest",
-    "prettier-plugin-tailwindcss": "latest",
-    "tailwindcss": "latest",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^4.0.0-beta.5",
     "tsx": "latest",
     "typescript": "latest"
   }
