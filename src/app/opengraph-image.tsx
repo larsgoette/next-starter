@@ -57,7 +57,7 @@ export default async function Image() {
           name: "Inter",
           data: await interSemiBold,
           style: "normal",
-          weight: 400,
+          weight: 600,
         },
       ],
     },
