@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "clsx": "latest",
+    "lucide-react": "latest",
     "motion": "latest",
     "next": "latest",
     "react": "latest",
