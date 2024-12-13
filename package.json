@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "clsx": "latest",
+    "motion": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",

@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang={APP_LANG}>
       <body
-        className={`${inter.variable} variable-font-reset container mx-auto bg-white px-4 font-sans text-zinc-950 antialiased`}>
+        className={`${inter.variable} variable-font-reset container !mx-auto bg-white px-4 font-sans text-zinc-950 antialiased`}>
         <Header />
         {children}
         <Footer />
