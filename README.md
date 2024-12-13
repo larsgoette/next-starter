@@ -1,6 +1,6 @@
-# Next Lean Starter
+# Next Starter
 
-A lean, modern and opinionated [Next.js](https://nextjs.org) starter template with a focus on developer experience and best practices. Built with TypeScript, Tailwind CSS, and includes essential tooling for code quality and optimization.
+A modern and opinionated [Next.js](https://nextjs.org) starter template with a focus on developer experience and best practices. Built with TypeScript, Tailwind CSS, and includes essential tooling for code quality and optimization.
 
 ## 💡 Philosophy
 
@@ -12,7 +12,7 @@ Unlike many starter templates that come loaded with features you may never use, 
 
 ```bash
 # Create new project using this starter
-npx create-next-app@latest --example "https://github.com/larsgoette/next-lean-starter" [your-project-name]
+npx create-next-app@latest --example "https://github.com/larsgoette/next-starter" [your-project-name]
 
 # Navigate to the project
 cd your-project-name
@@ -41,8 +41,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 - **Styling & UI**
 
-  - [Tailwind CSS](https://tailwindcss.com/) with automatic class sorting
-  - Modern Oklab color space support
+  - [Tailwind CSS 4](https://tailwindcss.com/) with automatic class sorting
   - Efficient class merging with `tailwind-merge`
 
 - **Developer Experience**
